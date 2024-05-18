@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 
 from database import get_db
 from models import PDFDocument
+from pymupdf_extract import extract_text_from_pdf
 
 
 router = APIRouter()
@@ -28,6 +29,7 @@ async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)
         with open(file_location, "wb+") as file_object:
             shutil.copyfileobj(file.file, file_object)
 
+        extract_text_from_pdf(file.filename)
         new_document = PDFDocument(file_name=file.filename, upload_date=str(datetime.utcnow()))
         db.add(new_document)
         db.commit()
@@ -46,7 +48,6 @@ async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)
 async def query_pdf(query: str):
     try:
         response = query_pdf_text(query)
-        return {"response": response}
         return {"status": "success", "response": response}
     except Exception as e:
         return {"status": "error", "message": str(e)}
