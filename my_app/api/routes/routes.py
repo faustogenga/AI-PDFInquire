@@ -1,4 +1,4 @@
-from llama_index_service import index_documents, query_pdf_text
+from api.services.llama_index_service import index_documents, query_pdf_text
 from fastapi import APIRouter, File, HTTPException, UploadFile, Depends
 import os
 import shutil
@@ -6,9 +6,9 @@ from datetime import datetime
 
 from sqlalchemy.orm import Session
 
-from database import get_db
-from models import PDFDocument
-from pymupdf_extract import extract_text_from_pdf
+from api.database.database import get_db
+from api.models.pdf_model import PDFDocument
+from api.utils.pymupdf_extract import extract_text_from_pdf
 
 
 router = APIRouter()

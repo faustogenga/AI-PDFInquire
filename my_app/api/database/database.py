@@ -1,4 +1,4 @@
-from models import SessionLocal
+from api.models.pdf_model import SessionLocal
 
 def get_db():
     db = SessionLocal()
