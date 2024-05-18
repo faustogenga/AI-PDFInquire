@@ -13,8 +13,6 @@ from pymupdf_extract import extract_text_from_pdf
 
 router = APIRouter()
 
-import pymupdf
-
 @router.get("/")
 async def root():
     return {"Hello Fausto": "World"}
