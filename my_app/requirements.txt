@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+sqlalchemy
+pymupdf
+openai
+llama-index
+python-dotenv
