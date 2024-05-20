@@ -72,7 +72,7 @@ This project consists of a React frontend application that communicates with a b
 
 ## Usage
 
-- Access the React frontend at [http://localhost:3000](http://localhost:xxxx).
+- Access the React frontend at [http://localhost:XXXX](http://localhost:xxxx).
 - Access the FastAPI backend at [http://localhost:8000](http://localhost:8000).
 - Access the FastAPI docs at [http://localhost:8000/docs](http://localhost:8000/docs).
 
