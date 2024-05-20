@@ -24,11 +24,11 @@
 @media only screen and (max-width: 480px) {
 
     .chatBody {
-        margin: 1% !important;
+        margin: 3% !important;
     }
     
     .header {
-        height: 15vh;
+        height: 12vh;
     }
     .chatBody {
         height: 70vh;
