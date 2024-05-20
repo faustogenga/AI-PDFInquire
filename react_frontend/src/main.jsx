@@ -1,9 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Home from './views/Home'
+import HomePage from './views/HomePage'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "react-chat-elements/dist/main.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Home/>
+    <HomePage/>
   </React.StrictMode>,
 )
