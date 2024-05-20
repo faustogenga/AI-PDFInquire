@@ -1,6 +1,7 @@
 # AI PDF Inquire Fullstack
 
 ## React Frontend with LLamaIndex Integration
+## Video Demostration : https://drive.google.com/file/d/1jCAzgZMkt0bYi8UMVkz5jwiH5wbIRXw-/view?usp=sharing
 
 This project demonstrates the integration of a React frontend with a backend server built with FastAPI. It includes features such as uploading PDF files, querying text from PDFs using AI, and managing chat interactions.
 
