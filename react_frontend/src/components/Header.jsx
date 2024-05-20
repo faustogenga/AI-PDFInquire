@@ -101,7 +101,7 @@ const Header = () => {
                     <div className="header-buttons d-flex">
                         <label htmlFor="fileInput" className="header-items-PDF px-4 btn btn-outline-dark" style={{ fontSize: "0.8rem" }} ></label>
                         <input type="file" id="fileInput" className="row d-none" onChange={handleFileUpload} />
-                        <button className="header-items-clear px-4 btn btn-outline-danger" style={{ fontSize: "0.8rem" }} onClick={deleteDocumentsConfirm}></button>
+                        <button className="mx-1 header-items-clear px-4 btn btn-outline-danger" style={{ fontSize: "0.8rem" }} onClick={deleteDocumentsConfirm}></button>
                     </div>
                 </div>
             </div>

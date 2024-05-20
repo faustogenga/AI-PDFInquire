@@ -12,11 +12,11 @@
 }
 
 .header {
-    height: 20vh;
+    height: 15vh;
 }
 
 .chatBody {
-    height: 60vh;
+    height: 65vh;
     overflow-y: auto;
 }
 
