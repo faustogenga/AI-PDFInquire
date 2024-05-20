@@ -76,6 +76,12 @@ This project consists of a React frontend application that communicates with a b
 - Access the FastAPI backend at [http://localhost:8000](http://localhost:8000).
 - Access the FastAPI docs at [http://localhost:8000/docs](http://localhost:8000/docs).
 
+## Change the origins in the main.py, adding your localhost from Vite.
+origins = [
+    "http://localhost:5173",  # Your frontend local development URL from Vite
+    # Add more origins as needed
+]
+
 ## File Structure
 
 ```
