@@ -86,7 +86,7 @@ const Header = () => {
                 <div className="col-auto">
                     <img
                         loading="lazy"
-                        src="/public/AI Planet Logo.png"
+                        src="/AI Planet Logo.png"
                         className="mx-1 img-fluid aspect-ratio-2-56 w-10"
                     />
                 </div>
