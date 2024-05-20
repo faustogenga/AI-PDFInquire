@@ -25,7 +25,7 @@ const Query = ({ SendMessages, clearMessages }) => {
   };
 
   return (
-    <div className="container">
+    <div className="query container">
       <div className="d-flex flex-column text-center justify-content-center">
         <div className="d-flex align-items-center mt-2 py-2 mt font-medium bg-light border border-light rounded">
           <input

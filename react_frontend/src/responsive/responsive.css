@@ -1,0 +1,74 @@
+.header-items-PDF::after {
+    content: 'Upload PDF';
+}
+
+.header-items-clear::after {
+    content: 'Clear Documents';
+}
+
+.home {
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    height: 20vh;
+}
+
+.chatBody {
+    height: 60vh;
+    overflow-y: auto;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .chatBody {
+        margin: 1% !important;
+    }
+    
+    .header {
+        height: 15vh;
+    }
+    .chatBody {
+        height: 70vh;
+        overflow-y: auto;
+    }
+    .header-items-PDF::after {
+        content: '';
+    }
+    .header-items-clear::after {
+        content: '';
+    }
+    .header-items-files{
+        font-size: small !important;
+        flex-direction: column !important;
+    }
+
+    .header-buttons {
+        justify-content: center !important;
+        text-align: center !important;
+        flex-direction: column !important;
+    }
+    .header-items-PDF::after {
+        text-align: center !important;
+        padding: 0.5rem !important;
+        background-image: url('/plusIcon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+
+    .header-items-clear::after {
+        padding: 0.5rem !important;
+        background-image: url('/deleteIcon.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    .header-items-clear {
+        margin-top: 10% !important;
+    }
+}

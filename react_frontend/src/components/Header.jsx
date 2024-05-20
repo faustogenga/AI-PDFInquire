@@ -82,25 +82,27 @@ const Header = () => {
 
     return (
         <>
-            <div className="d-flex flex-row justify-content-between py-4 font-weight-bold text-black shadow-sm">
+            <div className="header d-flex flex-row justify-content-between py-4 font-weight-bold text-black shadow-sm">
                 <div className="col-auto">
                     <img
                         loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9a003c74205fac0b54aea402119c03b57f7b60cb52c24e493cac19cdfa2d6e09?"
+                        src="/public/AI Planet Logo.png"
                         className="mx-1 img-fluid aspect-ratio-2-56 w-10"
                     />
                 </div>
-                <div className="col-auto mx-1">
+                <div className="header-items col-auto mx-1">
                     <div className="d-flex float-start">
-                        <div>
+                        <div className="header-items-files d-flex">
                             {documents.map((doc, index) => (
-                                <div className="m-1 badge rounded-pill text-bg-success "key={index}>{doc}</div>
+                                <div className="m-1 badge rounded-pill text-bg-success " key={index}>{doc}</div>
                             ))}
                         </div>
                     </div>
-                    <label htmlFor="fileInput" className="px-4 btn btn-outline-dark" style={{ fontSize: "0.8rem" }} >Upload PDF</label>
-                    <input type="file" id="fileInput" className="row d-none" onChange={handleFileUpload} />
-                    <button className="mx-1 px-4 btn btn-outline-danger" style={{ fontSize: "0.8rem" }} onClick={deleteDocumentsConfirm}>Clear Documents</button>
+                    <div className="header-buttons d-flex">
+                        <label htmlFor="fileInput" className="header-items-PDF px-4 btn btn-outline-dark" style={{ fontSize: "0.8rem" }} ></label>
+                        <input type="file" id="fileInput" className="row d-none" onChange={handleFileUpload} />
+                        <button className="header-items-clear px-4 btn btn-outline-danger" style={{ fontSize: "0.8rem" }} onClick={deleteDocumentsConfirm}></button>
+                    </div>
                 </div>
             </div>
         </>

@@ -5,7 +5,7 @@ const HomePage = () => {
 
     return (
         <>
-            <div className="container-fluid text-center">
+            <div className="home container-fluid">
                 <Header />
                 <ChatBody/>
             </div>

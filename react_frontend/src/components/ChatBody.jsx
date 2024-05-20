@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Avatar, MessageList } from "react-chat-elements";
+import { MessageList } from "react-chat-elements";
 import Query from "./Query";
 import { sendQuery } from "../services/api";
 
@@ -17,7 +17,7 @@ const ChatBody = () => {
     setMessages(prevMessages => [...prevMessages, message]);
   };
 
-  const SendMessages = (newMessages) => { 
+  const SendMessages = (newMessages) => {
     handleMessage(newMessages);
     try {
       const response = sendQuery(newMessages.text);
@@ -38,11 +38,11 @@ const ChatBody = () => {
   }
 
 
-  const clearMessages = () => { setMessages([])};
+  const clearMessages = () => { setMessages([]) };
 
   return (
     <>
-      <div className="mx-5 mt-4" style={{ height: "65vh", overflowY: "auto" }} ref={messageListRef}>
+      <div className="chatBody mx-5 mt-4" ref={messageListRef}>
         <MessageList
           className='message-list'
           lockable={true}
@@ -50,7 +50,7 @@ const ChatBody = () => {
           dataSource={messages}
         />
       </div>
-      <Query SendMessages={SendMessages} clearMessages={clearMessages}/>
+      <Query SendMessages={SendMessages} clearMessages={clearMessages} />
     </>
 
   )
