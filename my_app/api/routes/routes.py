@@ -15,7 +15,7 @@ router = APIRouter()
 
 @router.get("/")
 async def root():
-    return {"Hello Fausto": "World"}
+    return {"FASTAPI": "Welcome to the FASTAPI application by Fausto Genga"}
 
 @router.post("/upload/")
 async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)):
