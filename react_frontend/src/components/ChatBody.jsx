@@ -3,25 +3,32 @@ import { MessageList } from "react-chat-elements";
 import Query from "./Query";
 import { sendQuery } from "../services/api";
 
+ // ChatBody component
 const ChatBody = () => {
+  // State variables
   const [messages, setMessages] = useState([]);
   const messageListRef = useRef(null);
 
+  // Scroll to the bottom of the chat window when a new message is added
   useEffect(() => {
     if (messageListRef.current) {
       messageListRef.current.scrollTop = messageListRef.current.scrollHeight;
     }
   }, [messages]);
 
+  // Function to handle messages
   const handleMessage = (message) => {
     setMessages(prevMessages => [...prevMessages, message]);
   };
 
+  // Function to send messages
   const SendMessages = (newMessages) => {
     handleMessage(newMessages);
     try {
+      // Send the message to the server
       const response = sendQuery(newMessages.text);
       response.then((data) => {
+        // Add the response to the chat window
         handleMessage({
           position: 'left',
           type: 'text',
@@ -37,7 +44,7 @@ const ChatBody = () => {
     }
   }
 
-
+// Function to clear messages
   const clearMessages = () => { setMessages([]) };
 
   return (

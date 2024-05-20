@@ -3,10 +3,12 @@ import { useState } from "react";
 
 
 const Query = ({ SendMessages, clearMessages }) => {
-
+// Query component
+// State variable to store the message
   const [message, setMessage] = useState('');
-
+// Function to send a message
   const sendMessage = () => {
+    // Check if the message is empty
     SendMessages({
       position: 'right',
       type: 'text',
@@ -15,11 +17,14 @@ const Query = ({ SendMessages, clearMessages }) => {
       titleColor: 'blue',
       avatar: "https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"
     });
-    setMessage(''); // Clear the input field after sending the message
+    // Clear the input field after sending the message
+    setMessage('');
   };
 
+  // Function to handle key press
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
+      // Send the message
       sendMessage();
     }
   };
