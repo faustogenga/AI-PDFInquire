@@ -23,7 +23,7 @@ app.add_middleware(
 # Include the routes from the router
 app.include_router(router)
 
-# Define the main function to run the FastAPI application
+# Define the main function to run the FastAPI application for HOSTING IN KEYOBE
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, log_level="info")
