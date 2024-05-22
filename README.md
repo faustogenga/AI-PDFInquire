@@ -1,6 +1,6 @@
 # AI PDF Inquire Fullstack 
 
-## React Frontend with LLamaIndex Integration - Retrieval-augmented generation (RAG) App.
+## React Frontend with LLamaIndex Integration - Retrieval-augmented generation (RAG) App for AIPlanet Assignment.
 
 ### https://aipdfinquire.netlify.app/ - Online Hosted
 ### Frontend Hosted on Netlify and backend on Keyobe. Allows almost all functionallity.
