@@ -31,7 +31,7 @@ def load_or_create_index():
     if not os.path.exists(PERSIST_DIR):
         os.makedirs(PERSIST_DIR)
         # Index the documents
-        index = index_documents("./files")
+        index = index_documents("my_app/files")
         if index:
             return index
         else: 
@@ -50,7 +50,7 @@ def query_pdf_text(query):
     # Check if the index is empty
     index_documents = os.listdir(PERSIST_DIR)
     # Check if the files directory is empty
-    files = os.listdir("./files")
+    files = os.listdir("my_app/files")
     # Check if there are no documents or files
     if(len(index_documents) == 0 or len(files) == 0):
         return "Please add a PDF File to start querying."
@@ -66,7 +66,7 @@ def query_pdf_text(query):
 def clear_files_directory():
     try:
         # Clear the files directory
-        directory = "./files"
+        directory = "my_app/files"
         for filename in os.listdir(directory):
             # Check if the file is a file
             file_path = os.path.join(directory, filename)

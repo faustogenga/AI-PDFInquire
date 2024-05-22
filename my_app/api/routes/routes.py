@@ -23,7 +23,7 @@ async def root():
 async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)):
     try:
         # Check if the file already exists
-        file_location = f"./files/{file.filename}"
+        file_location = f"my_app/files/{file.filename}"
         if os.path.exists(file_location):
             raise HTTPException(status_code=400, detail="File already exists")
         # Save the file
@@ -37,7 +37,7 @@ async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)
         db.commit()
         db.refresh(new_document)
         # Index the documents
-        index_documents("./files")
+        index_documents("my_app/files")
         return {"status": "success", "message": "File uploaded and indexed successfully"}
     
     except HTTPException as he:
