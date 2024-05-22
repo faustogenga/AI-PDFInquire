@@ -1,7 +1,14 @@
-# AI PDF Inquire Fullstack
+# AI PDF Inquire Fullstack 
 
-## React Frontend with LLamaIndex Integration
-## Video Demostration : https://drive.google.com/file/d/1jCAzgZMkt0bYi8UMVkz5jwiH5wbIRXw-/view?usp=sharing
+## React Frontend with LLamaIndex Integration - Retrieval-augmented generation (RAG) App.
+
+### https://aipdfinquire.netlify.app/ - Online Hosted
+### Frontend Hosted on Netlify and backend on Keyobe. Allows almost all functionallity.
+Keyobe Branch altered for hosting, Main branch for local hosting and development.
+### Hosted FastAPI endpoints found here : 
+https://occasional-tandi-faustogenga-29fab5df.koyeb.app/docs
+
+#### Video Demostration : https://drive.google.com/file/d/1jCAzgZMkt0bYi8UMVkz5jwiH5wbIRXw-/view?usp=sharing
 
 This project demonstrates the integration of a React frontend with a backend server built with FastAPI. It includes features such as uploading PDF files, querying text from PDFs using AI, and managing chat interactions.
 
