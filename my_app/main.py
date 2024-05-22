@@ -7,7 +7,8 @@ app = FastAPI()
 
 # Define the origins that should be allowed to make requests to the API
 origins = [
-    "http://localhost:5173",  # Your frontend local development URL from Vite
+    "http://localhost:5173", 
+    "https://aipdfinquire.netlify.app" # Your frontend local development URL from Vite
     # Add more origins as needed
 ]
 

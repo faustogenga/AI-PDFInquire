@@ -69,7 +69,7 @@ async def get_all_documents():
         # Get all documents
         documents = []
         # Loop through all the files in the files directory
-        for document in os.listdir("my_app/files"):
+        for document in os.listdir("./files"):
             documents.append(document)
         return {"documents": documents}
     except Exception as e:
