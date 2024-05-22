@@ -29,7 +29,7 @@ This project demonstrates the integration of a React frontend with a backend ser
 
 ## Overview
 
-This project consists of a React frontend application that communicates with a backend server implemented using FastAPI. The frontend allows users to upload PDF files, which are then processed by the backend to extract text content. Additionally, it features a chat interface where users can interact with a chatbot.
+Developed the AI PDF Inquire Fullstack application, integrating a React frontend with a FastAPI backend to enable AI-driven PDF querying. Leveraged LLamaIndex for Retrieval-Augmented Generation (RAG) and natural language processing, allowing users to upload PDFs and interact with the content through AI. The project features a user-friendly chat interface and robust error handling. Hosted the frontend on Netlify and the backend on Koyeb, demonstrating expertise in full-stack development, RESTful APIs, and AI integration.
 
 ## Features
 
