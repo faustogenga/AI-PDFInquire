@@ -32,10 +32,10 @@ async def upload_pdf(file: UploadFile = File(...), db: Session = Depends(get_db)
         # Extract the text from the PDF file
         extract_text_from_pdf(file.filename)
         # Add the document to the database
-        new_document = PDFDocument(file_name=file.filename, upload_date=str(datetime.utcnow()))
-        db.add(new_document)
-        db.commit()
-        db.refresh(new_document)
+        # new_document = PDFDocument(file_name=file.filename, upload_date=str(datetime.utcnow()))
+        # db.add(new_document)
+        # db.commit()
+        # db.refresh(new_document)
         # Index the documents
         index_documents("./files")
         return {"status": "success", "message": "File uploaded and indexed successfully"}
