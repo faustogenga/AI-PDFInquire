@@ -101,11 +101,6 @@ const Header = () => {
         <>
             <div className="header d-flex flex-row justify-content-between py-4 font-weight-bold text-black shadow-sm">
                 <div className="col-auto">
-                    <img
-                        loading="lazy"
-                        src="/AI Planet Logo.png"
-                        className="mx-1 img-fluid aspect-ratio-2-56 w-10"
-                    />
                 </div>
                 <div className="header-items col-auto mx-1">
                     <div className="d-flex float-start">
