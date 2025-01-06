@@ -1,6 +1,14 @@
-# AI PDF Inquire Fullstack
+# AI PDF Inquire Fullstack 
 
-## React Frontend with LLamaIndex Integration
+## React Frontend with LLamaIndex Integration - Retrieval-augmented generation (RAG) App for AIPlanet Assignment.
+
+### https://aipdfinquire.netlify.app/ - Online Hosted
+### Frontend Hosted on Netlify and backend on Keyobe. Allows almost all functionallity.
+Keyobe Branch altered for hosting, Main branch for local hosting and development.
+### Hosted FastAPI endpoints found here : 
+https://occasional-tandi-faustogenga-29fab5df.koyeb.app/docs
+
+#### Video Demostration : https://drive.google.com/file/d/1jCAzgZMkt0bYi8UMVkz5jwiH5wbIRXw-/view?usp=sharing
 
 This project demonstrates the integration of a React frontend with a backend server built with FastAPI. It includes features such as uploading PDF files, querying text from PDFs using AI, and managing chat interactions.
 
@@ -21,7 +29,7 @@ This project demonstrates the integration of a React frontend with a backend ser
 
 ## Overview
 
-This project consists of a React frontend application that communicates with a backend server implemented using FastAPI. The frontend allows users to upload PDF files, which are then processed by the backend to extract text content. Additionally, it features a chat interface where users can interact with a chatbot.
+Developed the AI PDF Inquire Fullstack application, integrating a React frontend with a FastAPI backend to enable AI-driven PDF querying. Leveraged LLamaIndex for Retrieval-Augmented Generation (RAG) and natural language processing, allowing users to upload PDFs and interact with the content through AI. The project features a user-friendly chat interface and robust error handling. Hosted the frontend on Netlify and the backend on Koyeb, demonstrating expertise in full-stack development, RESTful APIs, and AI integration.
 
 ## Features
 
@@ -75,6 +83,12 @@ This project consists of a React frontend application that communicates with a b
 - Access the React frontend at [http://localhost:XXXX](http://localhost:xxxx).
 - Access the FastAPI backend at [http://localhost:8000](http://localhost:8000).
 - Access the FastAPI docs at [http://localhost:8000/docs](http://localhost:8000/docs).
+
+## Change the origins in the main.py, adding your localhost from Vite.
+origins = [
+    "http://localhost:5173",  # Your frontend local development URL from Vite
+    # Add more origins as needed
+]
 
 ## File Structure
 
